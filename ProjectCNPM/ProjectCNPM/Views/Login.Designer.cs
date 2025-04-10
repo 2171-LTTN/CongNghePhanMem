@@ -73,6 +73,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(151, 22);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
@@ -114,6 +115,7 @@
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Hiển thị mật khẩu/show password";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label3
             // 

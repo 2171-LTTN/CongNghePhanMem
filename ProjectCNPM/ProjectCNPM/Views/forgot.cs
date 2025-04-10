@@ -19,7 +19,9 @@ namespace ProjectCNPM
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            forgotpass f = new forgotpass();
+            this.Hide();
+            f.ShowDialog();
         }
     }
 }
