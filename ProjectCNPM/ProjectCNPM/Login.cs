@@ -52,7 +52,6 @@ namespace ProjectCNPM
                     if (result > 0)
                     {
                         MessageBox.Show("Đăng nhập thành công!");
-                        // Ví dụ: Mở form chính sau khi đăng nhập
                         this.Hide();
                         Login loginForm = new Login();
                         loginForm.ShowDialog();
@@ -72,7 +71,10 @@ namespace ProjectCNPM
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            forgot forgotForm = new forgot();
+            forgotForm.ShowDialog();
+            this.Show();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
