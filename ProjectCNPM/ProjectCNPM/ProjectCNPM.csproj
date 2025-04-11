@@ -42,7 +42,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -58,8 +60,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\DBModel.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\ChiTietMuonTra.cs" />
+    <Compile Include="Models\DanhMuc.cs" />
+    <Compile Include="Models\DBconnect.cs" />
+    <Compile Include="Models\DocGia.cs" />
+    <Compile Include="Models\LichSuDangNhap.cs" />
+    <Compile Include="Models\LichSuHoatDong.cs" />
+    <Compile Include="Models\NhanVien.cs" />
+    <Compile Include="Models\Phieu_GiaHanSach.cs" />
+    <Compile Include="Models\Phieu_MuonTraSach.cs" />
+    <Compile Include="Models\Sach.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Models\TaiKhoan.cs" />
+    <Compile Include="Models\TheLoai.cs" />
+    <Compile Include="Models\ThuVien.cs" />
+    <Compile Include="Models\VaiTro.cs" />
     <Compile Include="Views\forgot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,9 +136,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
