@@ -10,25 +10,20 @@ using System.Windows.Forms;
 
 namespace ProjectCNPM.Views
 {
-    public partial class ReaderMenu : Form
+    public partial class UpdateInfo : Form
     {
-        public ReaderMenu()
+        public UpdateInfo()
         {
             InitializeComponent();
         }
 
-        private void btnThongTinCaNhan_Click(object sender, EventArgs e)
+        private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-            ReaderInfo f = new ReaderInfo();
-            f.ShowDialog();
-
-            this.Show();
-               
+            MessageBox.Show("Cập nhật thành công!");
+            this.Close(); // Đóng form con, quay lại ReaderInfo
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnHuy_Click(object sender, EventArgs e)
         {
             this.Close();
         }

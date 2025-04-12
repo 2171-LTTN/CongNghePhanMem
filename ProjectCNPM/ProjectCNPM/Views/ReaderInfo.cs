@@ -10,22 +10,20 @@ using System.Windows.Forms;
 
 namespace ProjectCNPM.Views
 {
-    public partial class ReaderMenu : Form
+    public partial class ReaderInfo : Form
     {
-        public ReaderMenu()
+        public ReaderInfo()
         {
             InitializeComponent();
         }
 
-        private void btnThongTinCaNhan_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
             this.Hide();
-
-            ReaderInfo f = new ReaderInfo();
+            UpdateInfo f = new UpdateInfo();
             f.ShowDialog();
-
             this.Show();
-               
+            
         }
 
         private void btnClose_Click(object sender, EventArgs e)

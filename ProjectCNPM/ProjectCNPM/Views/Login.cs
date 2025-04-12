@@ -43,9 +43,14 @@ namespace ProjectCNPM
                     if (user != null)
                     {
                         MessageBox.Show("Đăng nhập thành công!");
-                        ProjectCNPM.Views.AdminMenu mainMenuForm = new ProjectCNPM.Views.AdminMenu();
-                        mainMenuForm.Show();
+                        //ProjectCNPM.Views.AdminMenu mainMenuForm = new ProjectCNPM.Views.AdminMenu();
+                        //mainMenuForm.Show();
                         this.Hide();
+                        ReaderMenu f = new ReaderMenu();
+                        f.ShowDialog();
+
+                        this.Show();
+                        txtPassword.Clear();
                     }
                     else
                     {

@@ -1,6 +1,6 @@
 ﻿namespace ProjectCNPM.Views
 {
-    partial class UpdateInfoForm
+    partial class UpdateInfo
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -36,19 +36,16 @@
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
-
             this.SuspendLayout();
-
             // 
             // lblHoTen
             // 
             this.lblHoTen.AutoSize = true;
             this.lblHoTen.Location = new System.Drawing.Point(20, 20);
             this.lblHoTen.Name = "lblHoTen";
-            this.lblHoTen.Size = new System.Drawing.Size(74, 17);
+            this.lblHoTen.Size = new System.Drawing.Size(67, 16);
             this.lblHoTen.TabIndex = 0;
             this.lblHoTen.Text = "Họ và tên:";
-
             // 
             // txtHoTen
             // 
@@ -56,17 +53,15 @@
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(200, 22);
             this.txtHoTen.TabIndex = 1;
-
             // 
             // lblSoDienThoai
             // 
             this.lblSoDienThoai.AutoSize = true;
             this.lblSoDienThoai.Location = new System.Drawing.Point(20, 60);
             this.lblSoDienThoai.Name = "lblSoDienThoai";
-            this.lblSoDienThoai.Size = new System.Drawing.Size(100, 17);
+            this.lblSoDienThoai.Size = new System.Drawing.Size(88, 16);
             this.lblSoDienThoai.TabIndex = 2;
             this.lblSoDienThoai.Text = "Số điện thoại:";
-
             // 
             // txtSoDienThoai
             // 
@@ -74,17 +69,15 @@
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(170, 22);
             this.txtSoDienThoai.TabIndex = 3;
-
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(20, 100);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(46, 17);
+            this.lblEmail.Size = new System.Drawing.Size(44, 16);
             this.lblEmail.TabIndex = 4;
             this.lblEmail.Text = "Email:";
-
             // 
             // txtEmail
             // 
@@ -92,17 +85,15 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(200, 22);
             this.txtEmail.TabIndex = 5;
-
             // 
             // lblDiaChi
             // 
             this.lblDiaChi.AutoSize = true;
             this.lblDiaChi.Location = new System.Drawing.Point(20, 140);
             this.lblDiaChi.Name = "lblDiaChi";
-            this.lblDiaChi.Size = new System.Drawing.Size(55, 17);
+            this.lblDiaChi.Size = new System.Drawing.Size(50, 16);
             this.lblDiaChi.TabIndex = 6;
             this.lblDiaChi.Text = "Địa chỉ:";
-
             // 
             // txtDiaChi
             // 
@@ -110,7 +101,6 @@
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(200, 22);
             this.txtDiaChi.TabIndex = 7;
-
             // 
             // btnCapNhat
             // 
@@ -120,7 +110,7 @@
             this.btnCapNhat.TabIndex = 8;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
-
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnHuy
             // 
@@ -130,9 +120,9 @@
             this.btnHuy.TabIndex = 9;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
-
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
-            // UpdateInfoForm
+            // UpdateInfo
             // 
             this.ClientSize = new System.Drawing.Size(350, 230);
             this.Controls.Add(this.lblHoTen);
@@ -145,10 +135,11 @@
             this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.btnHuy);
-            this.Name = "UpdateInfoForm";
+            this.Name = "UpdateInfo";
             this.Text = "Cập nhật thông tin cá nhân";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
     }
 }

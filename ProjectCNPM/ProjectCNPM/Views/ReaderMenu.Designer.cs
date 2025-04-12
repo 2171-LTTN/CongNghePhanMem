@@ -21,6 +21,7 @@
             this.btnTimKiemSach = new System.Windows.Forms.Button();
             this.btnLichSuMuon = new System.Windows.Forms.Button();
             this.btnThongTinCaNhan = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnTimKiemSach
@@ -51,9 +52,19 @@
             this.btnThongTinCaNhan.UseVisualStyleBackColor = true;
             this.btnThongTinCaNhan.Click += new System.EventHandler(this.btnThongTinCaNhan_Click);
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(258, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(30, 30);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "X";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // ReaderMenu
             // 
             this.ClientSize = new System.Drawing.Size(300, 300);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnTimKiemSach);
             this.Controls.Add(this.btnLichSuMuon);
             this.Controls.Add(this.btnThongTinCaNhan);
@@ -62,5 +73,7 @@
             this.ResumeLayout(false);
 
         }
+
+        private System.Windows.Forms.Button btnClose;
     }
 }
