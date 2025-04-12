@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjectCNPM.Models;
+using ProjectCNPM.Views;
+
 
 namespace ProjectCNPM
 {
@@ -19,12 +22,7 @@ namespace ProjectCNPM
             label3.Visible = false;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
@@ -35,37 +33,29 @@ namespace ProjectCNPM
                 return;
             }
 
-            string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=projectCNPM;Integrated Security=True";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                try
+                using (var context = new DBContext())
                 {
-                    conn.Open();
-                    string query = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Password = @password";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@username", username);
-                    cmd.Parameters.AddWithValue("@password", password);
+                    // Tìm người dùng khớp với username và password
+                    var user = context.TaiKhoans.FirstOrDefault(u => u.username == username && u.password == password);
 
-                    int result = (int)cmd.ExecuteScalar();
-
-                    if (result > 0)
+                    if (user != null)
                     {
                         MessageBox.Show("Đăng nhập thành công!");
+                        ProjectCNPM.Views.AdminMenu mainMenuForm = new ProjectCNPM.Views.AdminMenu();
+                        mainMenuForm.Show();
                         this.Hide();
-                        Login loginForm = new Login();
-                        loginForm.ShowDialog();
-                        this.Show();
                     }
                     else
                     {
                         MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.");
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi kết nối: " + ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối: " + ex.Message);
             }
         }
 
