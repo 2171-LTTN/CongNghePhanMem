@@ -72,7 +72,7 @@ namespace ProjectCNPM
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            forgot forgotForm = new forgot();
+            ForgotPass forgotForm = new ForgotPass();
             forgotForm.ShowDialog();
             this.Show();
         }
@@ -80,7 +80,7 @@ namespace ProjectCNPM
         private void btnRegister_Click(object sender, EventArgs e)
         {
             this.Hide();
-            register registerForm = new register();
+            Register registerForm = new Register();
             registerForm.ShowDialog();
 
             this.Show();

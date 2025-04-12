@@ -14,17 +14,15 @@ namespace ProjectCNPM.Models
         {
             Phieu_GiaHanSach = new HashSet<Phieu_GiaHanSach>();
             Phieu_MuonTraSach = new HashSet<Phieu_MuonTraSach>();
-            TaiKhoans = new HashSet<TaiKhoan>();
         }
 
         [Key]
-        [StringLength(50)]
-        public string maNV { get; set; }
+        public int maNV { get; set; }
 
         [StringLength(100)]
         public string tenNV { get; set; }
 
-        [StringLength(100)]
+        [StringLength(50)]
         public string chucVu { get; set; }
 
         [StringLength(20)]
@@ -35,8 +33,5 @@ namespace ProjectCNPM.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Phieu_MuonTraSach> Phieu_MuonTraSach { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TaiKhoan> TaiKhoans { get; set; }
     }
 }

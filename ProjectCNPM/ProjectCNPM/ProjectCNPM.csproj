@@ -62,7 +62,7 @@
   <ItemGroup>
     <Compile Include="Models\ChiTietMuonTra.cs" />
     <Compile Include="Models\DanhMuc.cs" />
-    <Compile Include="Models\DBconnect.cs" />
+    <Compile Include="Models\DBContext.cs" />
     <Compile Include="Models\DocGia.cs" />
     <Compile Include="Models\LichSuDangNhap.cs" />
     <Compile Include="Models\LichSuHoatDong.cs" />
@@ -70,22 +70,21 @@
     <Compile Include="Models\Phieu_GiaHanSach.cs" />
     <Compile Include="Models\Phieu_MuonTraSach.cs" />
     <Compile Include="Models\Sach.cs" />
-    <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Models\TaiKhoan.cs" />
     <Compile Include="Models\TheLoai.cs" />
-    <Compile Include="Models\ThuVien.cs" />
+    <Compile Include="Models\TheThuVien.cs" />
     <Compile Include="Models\VaiTro.cs" />
-    <Compile Include="Views\forgot.cs">
+    <Compile Include="Views\ForgotPass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\forgot.Designer.cs">
-      <DependentUpon>forgot.cs</DependentUpon>
+    <Compile Include="Views\ForgotPass.Designer.cs">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\forgotpass.cs">
+    <Compile Include="Views\ResetPass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\forgotpass.Designer.cs">
-      <DependentUpon>forgotpass.cs</DependentUpon>
+    <Compile Include="Views\ResetPass.Designer.cs">
+      <DependentUpon>ResetPass.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
@@ -95,17 +94,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\register.cs">
+    <Compile Include="Views\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\register.Designer.cs">
-      <DependentUpon>register.cs</DependentUpon>
+    <Compile Include="Views\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\forgot.resx">
-      <DependentUpon>forgot.cs</DependentUpon>
+    <EmbeddedResource Include="Views\ForgotPass.resx">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\forgotpass.resx">
-      <DependentUpon>forgotpass.cs</DependentUpon>
+    <EmbeddedResource Include="Views\ResetPass.resx">
+      <DependentUpon>ResetPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -119,8 +118,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\register.resx">
-      <DependentUpon>register.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

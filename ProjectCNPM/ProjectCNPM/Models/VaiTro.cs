@@ -16,7 +16,7 @@ namespace ProjectCNPM.Models
         }
 
         [Key]
-        [StringLength(50)]
+        [StringLength(20)]
         public string maVaiTro { get; set; }
 
         [StringLength(100)]

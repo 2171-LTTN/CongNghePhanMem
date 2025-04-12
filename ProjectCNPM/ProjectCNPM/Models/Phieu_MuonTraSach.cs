@@ -16,8 +16,7 @@ namespace ProjectCNPM.Models
         }
 
         [Key]
-        [StringLength(50)]
-        public string maMuonTra { get; set; }
+        public int maMuonTra { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? ngayMuon { get; set; }
@@ -25,16 +24,14 @@ namespace ProjectCNPM.Models
         [Column(TypeName = "date")]
         public DateTime? ngayTra { get; set; }
 
-        [StringLength(100)]
+        [StringLength(50)]
         public string tinhTrang { get; set; }
 
         public int? soLuong { get; set; }
 
-        [StringLength(50)]
-        public string maDocGia { get; set; }
+        public int? maDocGia { get; set; }
 
-        [StringLength(50)]
-        public string maNV { get; set; }
+        public int? maNV { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietMuonTra> ChiTietMuonTras { get; set; }

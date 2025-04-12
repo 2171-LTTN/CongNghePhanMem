@@ -16,10 +16,9 @@ namespace ProjectCNPM.Models
         }
 
         [Key]
-        [StringLength(50)]
-        public string maSach { get; set; }
+        public int maSach { get; set; }
 
-        [StringLength(255)]
+        [StringLength(200)]
         public string tenSach { get; set; }
 
         [StringLength(100)]
@@ -28,16 +27,13 @@ namespace ProjectCNPM.Models
         [StringLength(100)]
         public string nhaXuatBan { get; set; }
 
-        [StringLength(4)]
-        public string namXuatBan { get; set; }
+        public int? namXuatBan { get; set; }
 
         public int? soLuong { get; set; }
 
-        [StringLength(50)]
-        public string maDanhMuc { get; set; }
+        public int? maDanhMuc { get; set; }
 
-        [StringLength(50)]
-        public string maTheLoai { get; set; }
+        public int? maTheLoai { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietMuonTra> ChiTietMuonTras { get; set; }

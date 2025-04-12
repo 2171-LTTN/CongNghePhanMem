@@ -9,17 +9,13 @@ namespace ProjectCNPM.Models
     [Table("ChiTietMuonTra")]
     public partial class ChiTietMuonTra
     {
-        [Key]
-        [Column(Order = 0)]
-        [StringLength(50)]
-        public string maMuonTra { get; set; }
+        public int id { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
-        [StringLength(50)]
-        public string maSach { get; set; }
+        public int? maMuonTra { get; set; }
 
-        [StringLength(100)]
+        public int? maSach { get; set; }
+
+        [StringLength(50)]
         public string tinhTrangSach { get; set; }
 
         public virtual Phieu_MuonTraSach Phieu_MuonTraSach { get; set; }

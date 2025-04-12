@@ -16,8 +16,7 @@ namespace ProjectCNPM.Models
         }
 
         [Key]
-        [StringLength(50)]
-        public string maDanhMuc { get; set; }
+        public int maDanhMuc { get; set; }
 
         [StringLength(100)]
         public string tenDanhMuc { get; set; }

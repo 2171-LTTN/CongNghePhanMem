@@ -16,8 +16,7 @@ namespace ProjectCNPM.Models
         }
 
         [Key]
-        [StringLength(50)]
-        public string maTheLoai { get; set; }
+        public int maTheLoai { get; set; }
 
         [StringLength(100)]
         public string tenTheLoai { get; set; }

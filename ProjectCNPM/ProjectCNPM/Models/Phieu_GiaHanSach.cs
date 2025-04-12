@@ -9,8 +9,7 @@ namespace ProjectCNPM.Models
     public partial class Phieu_GiaHanSach
     {
         [Key]
-        [StringLength(50)]
-        public string maGiaHan { get; set; }
+        public int maGiaHan { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? ngayYeuCau { get; set; }
@@ -18,11 +17,9 @@ namespace ProjectCNPM.Models
         [StringLength(50)]
         public string trangThai { get; set; }
 
-        [StringLength(50)]
-        public string maNV { get; set; }
+        public int? maNV { get; set; }
 
-        [StringLength(50)]
-        public string maMuonTra { get; set; }
+        public int? maMuonTra { get; set; }
 
         public virtual NhanVien NhanVien { get; set; }
 

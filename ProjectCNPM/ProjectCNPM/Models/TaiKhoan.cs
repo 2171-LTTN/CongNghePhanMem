@@ -17,30 +17,27 @@ namespace ProjectCNPM.Models
         }
 
         [Key]
-        [StringLength(50)]
+        [StringLength(20)]
         public string username { get; set; }
 
-        [StringLength(100)]
+        [StringLength(30)]
         public string password { get; set; }
 
         [StringLength(50)]
+        public string email { get; set; }
+
+        [StringLength(20)]
         public string maVaiTro { get; set; }
 
-        [StringLength(50)]
-        public string maDocGia { get; set; }
+        public int? maDocGia { get; set; }
 
-        [StringLength(50)]
-        public string maNV { get; set; }
-
-        public virtual DocGia DocGia { get; set; }
+        public int? maNV { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<LichSuDangNhap> LichSuDangNhaps { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<LichSuHoatDong> LichSuHoatDongs { get; set; }
-
-        public virtual NhanVien NhanVien { get; set; }
 
         public virtual VaiTro VaiTro { get; set; }
     }

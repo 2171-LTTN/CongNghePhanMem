@@ -10,10 +10,9 @@ namespace ProjectCNPM.Models
     public partial class LichSuDangNhap
     {
         [Key]
-        [StringLength(50)]
-        public string maLichSu { get; set; }
+        public int maLichSu { get; set; }
 
-        [StringLength(50)]
+        [StringLength(20)]
         public string username { get; set; }
 
         public DateTime? thoiGianDangNhap { get; set; }

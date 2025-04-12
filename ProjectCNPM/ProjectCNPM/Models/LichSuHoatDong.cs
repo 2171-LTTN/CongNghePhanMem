@@ -10,10 +10,9 @@ namespace ProjectCNPM.Models
     public partial class LichSuHoatDong
     {
         [Key]
-        [StringLength(50)]
-        public string maHoatDong { get; set; }
+        public int maHoatDong { get; set; }
 
-        [StringLength(50)]
+        [StringLength(20)]
         public string username { get; set; }
 
         public DateTime? thoiGian { get; set; }
@@ -27,7 +26,7 @@ namespace ProjectCNPM.Models
         [StringLength(50)]
         public string maDoiTuong { get; set; }
 
-        [Column(TypeName = "text")]
+        [StringLength(255)]
         public string ghiChu { get; set; }
 
         public virtual TaiKhoan TaiKhoan { get; set; }
