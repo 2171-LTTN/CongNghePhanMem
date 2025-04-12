@@ -80,6 +80,18 @@
     <Compile Include="Views\ForgotPass.Designer.cs">
       <DependentUpon>ForgotPass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReaderInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReaderInfo.Designer.cs">
+      <DependentUpon>ReaderInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ResetPass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,8 +112,26 @@
     <Compile Include="Views\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ReaderMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReaderMenu.Designer.cs">
+      <DependentUpon>ReaderMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UpdateInfo.Designer.cs">
+      <DependentUpon>UpdateInfo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\ForgotPass.resx">
       <DependentUpon>ForgotPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReaderInfo.resx">
+      <DependentUpon>ReaderInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ResetPass.resx">
       <DependentUpon>ResetPass.cs</DependentUpon>
@@ -120,6 +150,12 @@
     </Compile>
     <EmbeddedResource Include="Views\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReaderMenu.resx">
+      <DependentUpon>ReaderMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UpdateInfo.resx">
+      <DependentUpon>UpdateInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

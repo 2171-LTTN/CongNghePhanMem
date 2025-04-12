@@ -48,7 +48,6 @@
             this.label1.Size = new System.Drawing.Size(135, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username/email:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -83,7 +82,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnForgotpass
             // 
