@@ -1,6 +1,6 @@
 ﻿namespace ProjectCNPM.Views
 {
-    partial class book_check_out
+    partial class System_Review
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // book_check_out
+            // System_Review
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "book_check_out";
-            this.Text = "book_check_out";
-            this.Load += new System.EventHandler(this.book_check_out_Load);
+            this.Name = "System_Review";
+            this.Text = "System_Review";
+            this.Load += new System.EventHandler(this.System_Review_Load);
             this.ResumeLayout(false);
 
         }

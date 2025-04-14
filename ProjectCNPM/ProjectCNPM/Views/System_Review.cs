@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ProjectCNPM.Views
 {
-    public partial class book_check_out : Form
+    public partial class System_Review : Form
     {
-        public book_check_out()
+        public System_Review()
         {
             InitializeComponent();
         }
 
-        private void book_check_out_Load(object sender, EventArgs e)
+        private void System_Review_Load(object sender, EventArgs e)
         {
 
         }

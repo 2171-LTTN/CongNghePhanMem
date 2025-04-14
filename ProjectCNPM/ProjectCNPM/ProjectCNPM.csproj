@@ -76,6 +76,12 @@
     <Compile Include="Models\TheLoai.cs" />
     <Compile Include="Models\TheThuVien.cs" />
     <Compile Include="Models\VaiTro.cs" />
+    <Compile Include="Views\book_check_out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\book_check_out.Designer.cs">
+      <DependentUpon>book_check_out.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Change_Password.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,12 +144,21 @@
     <Compile Include="Views\ReaderMenu.Designer.cs">
       <DependentUpon>ReaderMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\System_Review.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\System_Review.Designer.cs">
+      <DependentUpon>System_Review.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UpdateInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\UpdateInfo.Designer.cs">
       <DependentUpon>UpdateInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\book_check_out.resx">
+      <DependentUpon>book_check_out.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Change_Password.resx">
       <DependentUpon>Change_Password.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ReaderMenu.resx">
       <DependentUpon>ReaderMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\System_Review.resx">
+      <DependentUpon>System_Review.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UpdateInfo.resx">
       <DependentUpon>UpdateInfo.cs</DependentUpon>
