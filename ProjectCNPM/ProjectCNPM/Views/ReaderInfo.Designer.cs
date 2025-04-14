@@ -40,6 +40,7 @@ namespace ProjectCNPM.Views
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblPhoneVal = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDoiMatKhau = new System.Windows.Forms.Button();
             this.groupBoxInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,16 +152,28 @@ namespace ProjectCNPM.Views
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnUpdate.Location = new System.Drawing.Point(180, 280);
+            this.btnUpdate.Location = new System.Drawing.Point(99, 266);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(120, 35);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "✎ Cập nhật";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // btnDoiMatKhau
+            // 
+            this.btnDoiMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiMatKhau.Location = new System.Drawing.Point(240, 267);
+            this.btnDoiMatKhau.Name = "btnDoiMatKhau";
+            this.btnDoiMatKhau.Size = new System.Drawing.Size(126, 34);
+            this.btnDoiMatKhau.TabIndex = 4;
+            this.btnDoiMatKhau.Text = "Đổi Mật Khẩu";
+            this.btnDoiMatKhau.UseVisualStyleBackColor = true;
+            this.btnDoiMatKhau.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ReaderInfo
             // 
             this.ClientSize = new System.Drawing.Size(530, 350);
+            this.Controls.Add(this.btnDoiMatKhau);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBoxInfo);
@@ -184,5 +197,6 @@ namespace ProjectCNPM.Views
         private System.Windows.Forms.Label lblAddress, lblAddressVal;
         private System.Windows.Forms.Label lblPhone, lblPhoneVal;
         private System.Windows.Forms.Button btnUpdate;
+        private Button btnDoiMatKhau;
     }
 }

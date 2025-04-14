@@ -74,6 +74,12 @@
     <Compile Include="Models\TheLoai.cs" />
     <Compile Include="Models\TheThuVien.cs" />
     <Compile Include="Models\VaiTro.cs" />
+    <Compile Include="Views\Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Change_Password.Designer.cs">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ForgotPass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     <Compile Include="Views\UpdateInfo.Designer.cs">
       <DependentUpon>UpdateInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Change_Password.resx">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ForgotPass.resx">
       <DependentUpon>ForgotPass.cs</DependentUpon>
     </EmbeddedResource>
