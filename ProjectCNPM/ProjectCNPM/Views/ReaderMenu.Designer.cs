@@ -41,6 +41,7 @@
             this.btnLichSuMuon.TabIndex = 2;
             this.btnLichSuMuon.Text = "Lịch sử mượn sách";
             this.btnLichSuMuon.UseVisualStyleBackColor = true;
+            this.btnLichSuMuon.Click += new System.EventHandler(this.btnLichSuMuon_Click);
             // 
             // btnThongTinCaNhan
             // 

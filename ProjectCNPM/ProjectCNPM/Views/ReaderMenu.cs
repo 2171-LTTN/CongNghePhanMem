@@ -32,5 +32,10 @@ namespace ProjectCNPM.Views
         {
             this.Close();
         }
+
+        private void btnLichSuMuon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
