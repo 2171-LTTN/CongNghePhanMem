@@ -82,6 +82,12 @@
     <Compile Include="Views\book_check_out.Designer.cs">
       <DependentUpon>book_check_out.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Book_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Book_Management.Designer.cs">
+      <DependentUpon>Book_Management.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Change_Password.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </Compile>
     <EmbeddedResource Include="Views\book_check_out.resx">
       <DependentUpon>book_check_out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Book_Management.resx">
+      <DependentUpon>Book_Management.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Change_Password.resx">
       <DependentUpon>Change_Password.cs</DependentUpon>
