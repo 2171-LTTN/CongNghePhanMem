@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ProjectCNPM.Helpers;
+using ProjectCNPM.Models;
+using ProjectCNPM.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,8 +11,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ProjectCNPM.Models;
-using ProjectCNPM.Views;
 
 
 namespace ProjectCNPM
@@ -37,18 +38,15 @@ namespace ProjectCNPM
             {
                 using (var context = new DBContext())
                 {
-                    // Tìm người dùng khớp với username và password
                     var user = context.TaiKhoans.FirstOrDefault(u => u.username == username && u.password == password);
-
                     if (user != null)
                     {
                         MessageBox.Show("Đăng nhập thành công!");
-                        //ProjectCNPM.Views.AdminMenu mainMenuForm = new ProjectCNPM.Views.AdminMenu();
-                        //mainMenuForm.Show();
+                        LoginHistoryLogger loginhistorylogger = new LoginHistoryLogger("your_connection_string");
+                        loginhistorylogger.LogLoginHistory(username, DateTime.Now, "127.0.0.1");
                         this.Hide();
                         ReaderMenu f = new ReaderMenu();
                         f.ShowDialog();
-
                         this.Show();
                         txtPassword.Clear();
                     }
@@ -91,6 +89,11 @@ namespace ProjectCNPM
             {
                 txtPassword.UseSystemPasswordChar = true;
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
